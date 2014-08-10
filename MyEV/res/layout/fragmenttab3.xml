@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fr3"
+    android:orientation="vertical"
+     >
+    
+    
+    <TextView
+        android:id="@+id/tvConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginLeft="58dp"
+        android:text="@string/strConnection" />
+    <EditText 
+        android:id="@+id/etDeviceName"
+        android:layout_width="fill_parent"
+        android:padding="5dp"
+        android:hint="@string/strDeviceName"
+        
+        android:layout_height="wrap_content" />
+    <EditText 
+        android:id="@+id/etPassword"
+        android:layout_width="fill_parent"
+        android:padding="5dp"
+        android:hint="@string/strPassword"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/connectBT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="#f8aa33"
+        android:textColor="#ffffff"
+        android:text="@string/strConnectButton" />
+
+
+</LinearLayout>
