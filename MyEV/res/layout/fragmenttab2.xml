@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+    
+    <RelativeLayout 
+        
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    
+        android:background="#f8aa33"
+        
+        
+	    >
+		    <RelativeLayout 
+	        
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:layout_centerHorizontal="true"
+	        
+	        
+	        
+		    >
+			    <ImageView
+			        android:id="@+id/imgvBatteryCharging"
+			        android:layout_width="25dp"
+			        android:layout_height="25dp"
+			      	
+			
+			        android:src="@drawable/battery" />
+		    
+		    	<TextView
+			        android:id="@+id/tvBatteryCharging"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        
+			       	android:layout_toRightOf="@+id/imgvBatteryCharging"
+			       	android:textColor="#ffffff"
+			       	android:textSize="20sp"
+			        android:text="@string/strCharging" />
+		    </RelativeLayout>
+    </RelativeLayout>
+     
+   
+    
+    <RelativeLayout 
+        
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:padding="10dp"
+        
+	    >
+	    <ImageView
+	        android:id="@+id/imgvVoltage"
+	        android:layout_width="32dp"
+	        android:layout_height="32dp"
+	        
+	
+	        android:src="@drawable/volt" />
+    
+    	<TextView
+	        android:id="@+id/tvVoltage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	       	android:layout_toRightOf="@+id/imgvVoltage"
+	       	android:textColor="#ffffff"
+	       	android:textSize="24dp"
+	        android:text="@string/strVoltage" />
+    
+      	<TextView
+	        android:id="@+id/tvBatteryVoltage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	       	android:layout_toRightOf="@+id/tvVoltage"
+	       	
+	       	android:textColor="#ffffff"
+	       	android:textSize="24dp"
+	        android:text="@string/strBatteryVoltage" />
+     	<TextView
+	        android:id="@+id/tvMaxVoltage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	       	android:layout_below="@+id/imgvVoltage"
+	       	android:textColor="#ffffff"
+	       	android:textSize="14dp"
+	       	android:gravity="left"
+	        android:text="@string/strMaxVoltage" />
+     	<TextView
+	        android:id="@+id/tvMaxVoltageValue"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	       	android:layout_below="@+id/imgvVoltage"
+	       	android:layout_toRightOf="@+id/tvMaxVoltage"
+	       	android:padding="5dp"
+	       	android:textColor="#ffffff"
+	       	android:textSize="14sp"
+	       	
+	         />
+     	<TextView
+	        android:id="@+id/tvMinVoltage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	       	android:textColor="#ffffff"
+	       	android:textSize="14dp"
+	       	android:layout_below="@+id/imgvVoltage"
+	       	android:layout_toRightOf="@+id/tvMaxVoltageValue"
+	       	
+	        android:text="@string/strMinVoltage" />
+     	<TextView
+	        android:id="@+id/tvMinVoltageValue"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	       	android:textColor="#ffffff"
+	       	android:textSize="14sp"
+	       	
+	       	android:layout_below="@+id/imgvVoltage"
+	       	android:layout_toRightOf="@+id/tvMinVoltage"
+	       	
+	         />
+     	<TextView
+	        android:id="@+id/tvAvgVoltage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	       	android:textColor="#ffffff"
+	       	android:textSize="14dp"
+	       	android:layout_below="@+id/imgvVoltage"
+	       	android:layout_toRightOf="@+id/tvMinVoltageValue"
+	       	
+	        android:text="@string/strAvgVoltage" />
+     	<TextView
+	        android:id="@+id/tvAvgVoltageValue"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	       	android:textColor="#ffffff"
+	       	android:textSize="14sp"
+	      
+	       	android:layout_below="@+id/imgvVoltage"
+	       	android:layout_toRightOf="@+id/tvAvgVoltage"
+	       	
+	         />
+        
+	    
+     </RelativeLayout>
+	
+    
+      <RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginTop="116dp"
+        android:layout_marginLeft="28dp"
+       
+	    >
+	     <TextView
+	        android:id="@+id/tvTemperature"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#ffffff"
+	        android:padding="5dp"
+	        
+	       
+	        android:text="@string/strTemperature" 
+	     />
+	    
+	     <ImageView
+	        android:id="@+id/imgvTemperature"
+	        android:layout_width="32dp"
+	        android:layout_height="32dp"
+	        
+	       	android:layout_below="@+id/tvTemperature"
+	       	
+	        android:src="@drawable/temperature" 
+	     />
+	      <TextView
+	        android:id="@+id/tvTemperatureValue"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#ffffff"
+	        android:padding="5dp"
+	        android:textSize="24dp"
+	        android:layout_below="@+id/tvTemperature"
+	        android:layout_toRightOf="@+id/imgvTemperature"
+	        
+	        android:text="@string/strTemperatureValue"
+	      />
+          
+     </RelativeLayout>
+   	 
+   	 <RelativeLayout 
+   	     android:id="@+id/rlChargerCurrent"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentRight="true"
+	    android:layout_marginTop="116dp"
+        android:layout_marginRight="28dp"
+	    >
+	     <TextView
+	        android:id="@+id/tvChargerCurrent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#ffffff"
+	        android:padding="5dp"
+	        
+	       
+	        android:text="@string/strChargerCurrent" 
+	     />
+	    
+	     <ImageView
+	        android:id="@+id/imgvChargerCurrent"
+	        android:layout_width="32dp"
+	        android:layout_height="32dp"
+	        
+	       	android:layout_below="@+id/tvChargerCurrent"
+	       	
+	        android:src="@drawable/ampere" 
+	     />
+	      <TextView
+	        android:id="@+id/tvChargerCurrentValue"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#ffffff"
+	        android:padding="5dp"
+	        android:textSize="24dp"
+	        android:layout_below="@+id/tvChargerCurrent"
+	        android:layout_toRightOf="@+id/imgvChargerCurrent"
+	        
+	        android:text="@string/strChargerCurrentValue"
+	      />
+          
+     </RelativeLayout>
+
+   	 <RelativeLayout 
+        
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent" 
+	    android:padding="15dp"
+        android:layout_below="@+id/rlChargerCurrent"
+        android:background="@drawable/chartbg"
+	    >
+	      	<RelativeLayout 
+        
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:padding="3dp"
+		    >
+	    
+		   	     <ImageView
+			        android:id="@+id/imgvBattery"
+			        android:layout_width="25dp"
+			        android:layout_height="25dp"
+			        
+			       	
+			       	
+			        android:src="@drawable/battery" 
+			     />
+			     <TextView
+			        android:id="@+id/tvbatteryCellState"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#ffffff"
+			        android:textSize="20sp"
+		
+			        android:layout_toRightOf="@+id/imgvBattery"
+			        
+			        android:text="@string/strBatteryCellStat"
+			      />
+			    </RelativeLayout> 
+			   <RelativeLayout 
+		        android:id="@+id/rlBatteryCellStateImages"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" 
+			   
+		        android:layout_alignParentRight="true"
+		       
+			    >
+			    
+		   	
+			     <TextView
+			        android:id="@+id/tvbatteryCellStateImgFull"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#ffffff"
+			        android:textSize="16sp"
+					android:drawableLeft="@drawable/full12"
+			        
+			        android:text="Full"
+			        
+			      />
+				<TextView
+			        android:id="@+id/tvbatteryCellStateImgNormal"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#ffffff"
+			        android:textSize="16sp"
+					android:drawableLeft="@drawable/normal12"
+			        android:layout_below="@+id/tvbatteryCellStateImgFull"
+			        android:text="Normal"
+			        
+			      />
+				<TextView
+			        android:id="@+id/tvbatteryCellStateImgLow"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#ffffff"
+			        android:textSize="16sp"
+					android:drawableLeft="@drawable/low12"
+			        android:layout_below="@+id/tvbatteryCellStateImgNormal"
+			        android:text="Low"
+			        
+			      />
+				<TextView
+			        android:id="@+id/tvbatteryCellStateImgEmpty"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#ffffff"
+			        android:textSize="16sp"
+					android:drawableLeft="@drawable/empty12"
+			        android:layout_below="@+id/tvbatteryCellStateImgLow"
+			        android:text="Empty"
+			        
+			      />
+		   	 
+		   	
+		   </RelativeLayout>  
+		   	
+			 <ListView
+		        android:id="@+id/listview"
+		        android:layout_below="@+id/rlBatteryCellStateImages"
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:cacheColorHint="@android:color/transparent"
+		        android:divider="@null"
+				android:dividerHeight="0dp">
+		    </ListView>
+   	 
+   	
+   </RelativeLayout>
+
+</RelativeLayout>

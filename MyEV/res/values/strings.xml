@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="app_name_small">My EV</string>
+    <string name="app_name">www.SMART-Electro.net</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Fragment1">This is ActionBarSherlock Fragment 1</string>
+    <string name="Fragment2">This is ActionBarSherlock Fragment 2</string>
+    <string name="strConnection">Set Up Your Car Connection</string>
+    <string name="strRemainingBattery">Remaining Battery</string>
+    <string name="strTimetoCharge">TIME\nTO CHARGE</string>
+    <string name="strChargingHour">0h</string>
+	<string name="strRemainingDistance">REMAINING DISTANCE</string>
+	<string name="strKm">0Km</string>
+	<string name="strCurrent">CURRENT</string>
+	<string name="strA">0A</string>
+	<string name="strVoltage"> Voltage: </string>
+	<string name="strBatteryVoltage">\t354V</string>
+	<string name="strMaxVoltage">MAX :</string>
+	<string name="strMaxVoltageValue">4v</string>
+	<string name="strMinVoltage">MIN :</string>
+	<string name="strMinVoltageValue">4v</string>
+	<string name="strAvgVoltage">AVG :</string>
+	<string name="strAvgVoltageValue">3v</string>
+	<string name="strTemperature">TEMPERATURE</string>
+	<string name="strTemperatureValue">22C</string>
+	<string name="strChargerCurrent">CHARGER CURRENT</string>
+	<string name="strChargerCurrentValue">2A</string>
+	<string name="strConnectButton">Connect</string>
+	<string name="strDeviceName">Bluetooth Device Name</string>
+	<string name="strPassword">PIN (PasswordS)</string>
+	<string name="strBatteryCellStat">Battery Cell Status</string>
+	<string name="strCharging">Charging</string>
+</resources>
